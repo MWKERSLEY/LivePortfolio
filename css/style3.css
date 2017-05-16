@@ -1,0 +1,341 @@
+/*whole front page*/
+#home {
+    height: 100vh;
+    /*background-image: url();*/
+    /*max-height: 100%;*/
+    width:100%;
+    position: relative;
+}
+/*hi*/
+.contact-detail {
+    margin-top: -130px;
+}
+.contactMe {
+    margin-bottom: 0 !important;
+}
+#hi {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 4px 12px #000000;
+}
+/*im a c# guy*/
+#home p {
+    color: #DDDDFF;
+    text-shadow: 2px 4px 12px #000000;
+}
+/*im matt*/
+#home h1 {
+    color: #DDDDFF;
+    text-shadow: 2px 4px 12px #000000;
+}
+.section-title {
+    border-color: #000000;
+}
+#home .section-title {
+    margin: 200px auto 50px auto;
+    border-color: white;
+    border-color: #ffa400;
+}
+#work p {
+    font-size: 1.3em;
+}
+/*scroll button container*/
+#scroller {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    color: #ffa400;
+    margin-top: 0;
+}
+.modal-body {
+    background-color: rgba(255,255,255,0.6) !important;
+    position: relative;
+}
+.projectDetails div {
+    float: left;
+    z-index: 10;
+}
+.projectDetails ul {
+    max-width: 300px;
+}
+.projectPic {
+    position: absolute;
+    right: 0;
+}
+.scrolly {
+    width: 100%;
+    color: #ffa400;
+}
+#vid {
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+.smoothScroll.navbar-brand {
+    border: 2px solid white;
+    margin: 0;
+}
+
+#portfolioGrid {
+    text-align: center;
+}
+#scroller a {
+    
+}
+h2 small {
+    font-size: 60%;
+}
+
+#frontSection {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+#frontSection p {
+    font-size: 2em;
+    padding: 1px;
+    line-height: 1.3em;
+}
+
+#arrowDown {
+    font-size: 5em;
+    text-decoration: none;
+}
+
+.projectElement {
+    min-height: 350px;
+}
+
+.projectElement img {
+    min-height: 300px;
+}
+
+.modal {
+    overflow: scroll !important;
+}
+
+.projectPic {
+    z-index: 0 !important;
+}
+/*	.goto-next {
+		border: 0;
+		bottom: 0;
+		display: block;
+		height: 5em;
+		left: 50%;
+		margin: 0 0 0 -5em;
+		overflow: hidden;
+		position: absolute;
+		text-indent: 10em;
+		white-space: nowrap;
+		width: 10em;
+		z-index: 1;
+	}
+
+		.goto-next:before {
+			background-image: url("images/arrow.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 1.5em;
+			left: 50%;
+			margin: -0.75em 0 0 -1em;
+			position: absolute;
+			top: 50%;
+			width: 2em;
+			z-index: 1;
+		}
+
+				#home .goto-next {
+					height: 7em;
+				}
+
+			.goto-next:before {
+				height: 0.8em;
+				margin: -0.4em 0 0 -0.6em;
+				width: 1.2em;
+			}*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media (max-width : 320px) {
+    .projectPic {
+        display: none;
+    }
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+    #home .section-title {
+/*        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;*/
+        /*background-color: red;*/
+        height: auto;
+        margin: 130px 0 5px 0;
+        padding: 5px 0 5px 0;
+    }
+    .modal {
+        overflow: scroll !important;
+    }
+    .modal p {
+        font-size: 1em !important;
+    }
+    .modal h1,.modal h2,.modal h3,.modal h4,.modal h5,.modal h6 {
+        margin: 5px !important;
+        padding: 3px !important;
+    }
+    #scroller {
+        margin-top: 5px;
+    }
+    #plan .plan-title {
+        font-size: 1.5em;
+    }
+    .plan {
+        width:275px !important;
+        padding: 20px !important;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width: 321px) and (max-width : 480px) {
+    .projectPic {
+        display: none;
+    }
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+    #home .section-title {
+/*        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;*/
+        /*background-color: red;*/
+        height: auto;
+        margin: 200px 0 5px 0;
+        padding: 5px 0 5px 0;
+    }
+    
+    #scroller {
+        margin-top: 5px;
+    }
+    
+    .grid figure {
+        
+        max-width: 100% !important;
+        margin-bottom: 20px;
+        /*background-color: red !important; */
+    }
+    #plan .plan-title {
+        font-size: 2em;
+    }
+    .modal {
+        overflow: scroll !important;
+    }
+    .modal p {
+        font-size: 1em !important;
+    }
+    .modal h1,.modal h2,.modal h3,.modal h4,.modal h5,.modal h6 {
+        margin: 5px !important;
+        padding: 3px !important;
+    }
+}
+
+
+
+/* Small Devices, Tablets */
+@media (min-width: 481px) and (max-width : 767px) {
+    /*whole front page*/
+    #frontSection {
+        /*background-color: yellow;*/
+        height: 100%;
+    }
+   /* #home .section-title {
+        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;
+        background-color: yellow;
+    }*/
+    .projectPic {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width : 991px) {
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+   /* .grid {
+        text-align: center;
+    }*/
+    /*.effect-zoe {
+        width: auto;
+    }*/
+  /*  #home .section-title {
+        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;
+        background-color: yellow;
+    }*/
+    /*scroll button container*/
+/*    #scroller {
+        position: absolute;
+        text-align: center;
+        width: auto;
+        color: #ffa400;
+        bottom: 40%;
+    }*/
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 992px) and (max-width : 1200px) {
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+    /*scroll button container*/
+    #scroller {
+        position: relative;
+        text-align: center;
+        width: auto;
+        color: #ffa400;
+        bottom: 20%;
+    }
+    /*font page box*/
+    #home .section-title {
+        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;
+        /*background-color: green;*/
+        height: auto;
+        margin-top: 200px;
+    }
+    #plan .plan-title {
+        font-size: 2em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1201px) {
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+    /*font page box*/
+    #home .section-title {
+    /*background-color: blue;*/
+    height: auto;
+    margin-top: 250px;
+}
+}
